@@ -1,5 +1,7 @@
+//was missing stdlib and stdio
 #include<math.h>
-
+#include<stdlib.h>
+#include<stdio.h>
 #include "kaprekarUtils.h"
 
 /**
@@ -23,19 +25,19 @@
  * <code>false</code> otherwise.
  */
 int isKaprekar(int n) {
-
+double numberofDigits, modulous;
   if(n < 1) {
-    return false;
+    return (0);
   }
 
   int i;
   long square = n * (long) n;
   int numDigits = (int) log10(n) + 1;
-  long modulus = 0;
+  long modulus = 1;
   long first, second;
 
   //for each possible "split" of the square...
-  for(i=1; i<=numberOfDigits; i++) {
+  for(i=1; i<=numberofDigits; i++) {
     //increase the modulus by a factor of 10
     modulous *= 10;
 
