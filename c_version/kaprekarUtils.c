@@ -32,7 +32,7 @@ double numberofDigits, modulous;
 
   int i;
   long square = n * (long) n;
-  int numDigits = (int) log10(n) + 1;
+  int numberofDigits = (int) log10(n) + 1;
   long modulus = 1;
   long first, second;
 
